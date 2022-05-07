@@ -51,7 +51,7 @@ public class Assignment_6 {
      */
     public static List<Integer> uniqueSortedRandoms(final int min, final int max, final int poolSize) {
 
-        List<Integer> list = new SecureRandom("ABC".getBytes()).ints(poolSize,min,max)
+        List<Integer> list = new SecureRandom().ints(poolSize,min,max)
                 .boxed()
                 .distinct()
                 .sorted()
